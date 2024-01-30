@@ -1,0 +1,53 @@
+main,
+header,
+aside,
+footer {
+  border: 1px solid black;
+  margin: 0.5rem;
+  /* padding: 1em; */
+}
+
+header {
+  display: flex;
+}
+
+ul {
+  /* display: flex; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-link{
+  float: right;
+}
+
+#nav-link > li,
+#nav-link > form {
+  display: inline;
+  /* padding: 0 1em; */
+}
+
+#nav-link > li {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  /* padding: 0 1em 0 1em; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+nav{
+    float: right
+}
+
+aside {
+  width: 30%;
+  padding: 0 1rem;
+}
