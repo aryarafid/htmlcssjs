@@ -19,7 +19,7 @@ ul {
   padding: 0;
 }
 
-#nav-link{
+#nav-link {
   float: right;
   /* display: flex; */
 }
@@ -33,7 +33,6 @@ ul {
 #nav-link > li {
   /* text-align: center; */
   align-items: stretch;
-
 }
 
 main {
@@ -47,10 +46,10 @@ h1 {
   float: left;
 }
 
-nav{
-    float: right;
-    display: inherit;
-    align-items: center;
+nav {
+  float: right;
+  display: inherit;
+  align-items: center;
 }
 
 aside {
@@ -58,6 +57,23 @@ aside {
   padding: 0 1rem;
 }
 
-#aside-link>li{
-    padding: 0.5em 0;
+#aside-link > li {
+  padding: 0.5em 0;
+}
+
+@media screen and (max-width: 700px) {
+  header,
+  main {
+    flex-direction: column;
+  }
+
+  #nav-link > li,
+  #nav-link > form {
+    display: block;
+    margin: auto;
+  }
+
+  aside {
+    width: auto;
+  }
 }
